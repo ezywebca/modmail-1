@@ -312,11 +312,11 @@ class Utility(commands.Cog):
         embed.set_author(
             name="Modmail - About",
             icon_url=self.bot.user.avatar_url,
-            url="https://discord.gg/F34cRU8",
+            url="https://discord.me/devshub",
         )
         embed.set_thumbnail(url=self.bot.user.avatar_url)
 
-        desc = "This is an open source Discord bot that serves as a means for "
+        desc = "This is『💡』Developers Hub Discord bot that serves as a means for "
         desc += "members to easily communicate with server administrators in "
         desc += "an organised manner."
         embed.description = desc
@@ -324,7 +324,7 @@ class Utility(commands.Cog):
         embed.add_field(name="Uptime", value=self.bot.uptime)
         embed.add_field(name="Latency", value=f"{self.bot.latency * 1000:.2f} ms")
         embed.add_field(name="Version", value=f"`{self.bot.version}`")
-        embed.add_field(name="Authors", value="`kyb3r`, `Taki`, `fourjr`")
+        embed.add_field(name="Authors", value="`Templar`, `NeutronDev`, `TrooperN`, `The Developer`, `DanielTheDev`")
         embed.add_field(name="Hosting Method", value=self.bot.hosting_method.name)
 
         changelog = await Changelog.from_url(self.bot)
@@ -344,15 +344,14 @@ class Utility(commands.Cog):
 
         embed.add_field(
             name="Want Modmail in Your Server?",
-            value="Follow the installation guide on [GitHub](https://github.com/kyb3r/modmail/) "
-            "and join our [Discord server](https://discord.gg/F34cRU8)!",
+            value="join our [Discord server](https://discord.me/devshub) and ask dm ModMail!",
             inline=False,
         )
 
         embed.add_field(
             name="Support the Developers",
             value="This bot is completely free for everyone. We rely on kind individuals "
-            "like you to support us on [`Patreon`](https://patreon.com/kyber) (perks included) "
+            "like you to support us on [`PayPal`](https://discord.me/devshub) (perks included) "
             "to keep this bot free forever!",
             inline=False,
         )
@@ -366,7 +365,7 @@ class Utility(commands.Cog):
     async def sponsors(self, ctx):
         """Shows a list of sponsors."""
         resp = await self.bot.session.get(
-            "https://raw.githubusercontent.com/kyb3r/modmail/master/SPONSORS.json"
+            "https://raw.githubusercontent.com/ezywebca/modmail-1/master/SPONSORS.json"
         )
         data = loads(await resp.text())
 
@@ -403,7 +402,7 @@ class Utility(commands.Cog):
                 title="Debug Logs:",
                 description="You don't have any logs at the moment.",
             )
-            embed.set_footer(text="Go to Heroku to see your logs.")
+            embed.set_footer(text="Go to NewBot to see your logs.")
             return await ctx.send(embed=embed)
 
         messages = []
@@ -471,7 +470,7 @@ class Utility(commands.Cog):
                 color=self.bot.main_color,
                 description="Something's wrong. We're unable to upload your logs to hastebin.",
             )
-            embed.set_footer(text="Go to Heroku to see your logs.")
+            embed.set_footer(text="Tell Templar About The Error.")
         await ctx.send(embed=embed)
 
     @debug.command(name="clear", aliases=["wipe"])
@@ -1648,7 +1647,7 @@ class Utility(commands.Cog):
         """
         Commands relating to logviewer oauth2 login authentication.
 
-        This functionality on your logviewer site is a [**Patron**](https://patreon.com/kyber) only feature.
+        This functionality on your logviewer site is a [**Donator**](http://modlogs.newbot.ga/) only feature.
         """
         await ctx.send_help(ctx.command)
 
@@ -1865,8 +1864,7 @@ class Utility(commands.Cog):
 
         desc = (
             f"The latest version is [`{self.bot.version}`]"
-            "(https://github.com/kyb3r/modmail/blob/master/bot.py#L25)"
-        )
+    )
 
         if self.bot.version >= parse_version(latest.version) and flag.lower() != "force":
             embed = discord.Embed(
