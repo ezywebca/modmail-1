@@ -1,28 +1,28 @@
 [
     {
         "embed": {
-            "description": "This is a youtube channel that provides high quality reddit content. Videos are uploaded regularly so you are never out of funny, interesting or even creepy content!",
+            "description": "We Dont Have A Sponsor Yet 😔",
             "color": 15114050,
             "footer": {
-                "icon_url": "https://i.imgur.com/fvNKUks.png",
-                "text": "I am a robot, son of Daniel (UK)"
+                "icon_url": "https://media.discordapp.net/attachments/796272188528787456/796947672820744232/avatar.png",
+                "text": ""
             },
             "thumbnail": {
-                "url": "https://i.imgur.com/WyzaPKY.png"
+                "url": "https://media.discordapp.net/attachments/796272188528787456/796947672820744232/avatar.png"
             },
             "author": {
-                "name": "Sir Reddit",
-                "url": "https://www.youtube.com/channel/UCgSmBJD9imASmJRleycTCwQ?sub_confirmation=1",
-                "icon_url": "https://i.imgur.com/WyzaPKY.png"
+                "name": "Your Name Could Be Here!",
+                "url": "Your Url Could be Here!",
+                "icon_url": "https://media.discordapp.net/attachments/796272188528787456/796947672820744232/avatar.png"
             },
             "fields": [
                 {
-                    "name": "Subscribe!",
-                    "value": "[**Click Here**](https://www.youtube.com/channel/UCgSmBJD9imASmJRleycTCwQ?sub_confirmation=1)"
+                    "name": "Donate Today!",
+                    "value": "[**Click Here**](https://newbot.ga)"
                 },
                 {
                     "name": "Discord Server!",
-                    "value": "[**Click Here**](https://discord.gg/V8ErqHb)"
+                    "value": "[**Click Here**](https://discord.me/devshub)"
                 }
             ]
         }
